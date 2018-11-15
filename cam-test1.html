@@ -42,8 +42,10 @@
 
 	// Trigger photo take
 	 document.getElementById("snap").addEventListener("click", function() {
-    canvas.width="380";
-    canvas.height="240";
+     var x = screen.width;
+     var y = screen.height;
+    canvas.width= x;
+    canvas.height= y;
 		context.drawImage(video, 1, 1, 380, 240);
     document.getElementById('video').remove();
     document.getElementById('snap').remove();
