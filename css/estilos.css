@@ -11,6 +11,8 @@ h1{
   text-shadow: 0.1em 0.1em 0.5em black !important;
 }
 
+
+
 .buscador{
   text-align: center;
   padding-top: 150px;
@@ -61,6 +63,7 @@ button:hover{
   border-radius: 1.5rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
 
 .desplegableOculto{
   width: 400px;
@@ -166,16 +169,3 @@ a.boto_menu_main {
 	margin-top: 0.1em;
 	margin-bottom: 0.1em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
