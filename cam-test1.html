@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,23 +8,25 @@
 	<link rel="stylesheet" href="css/estilos.css">
 
   </head>
-  <body>
-	<div style="height:80%;">
+  <body style='margin : 0px;'>
+
+  	<div style="height:80%; text-align: center;">
 		<video id="video" width="100%" height="auto" autoplay></video>
-		<button id="snap">CAPTURA FOTO</button>
-		<canvas id="canvas" width="" height="" ></canvas>
+    <button id="snap">CAPTURA FOTO</button>
+		<canvas id="canvas" width="0" height="0" ></canvas>
 	</div>
-	<div style="height:20%; text-align: center; vertical-align: middle; background-color: rgb(79,128,186);">
-		<a class="boto_menu_main" style="display: inline-block; margin-top: 10%;" href="index.html">TORNAR AL MENÚ PRINCIPAL</a>
+
+	<div style="height:20%; text-align: center; vertical-align: middle; background-color: rgb(79,128,186);margin-top: -4px;">
+		<a class="boto_menu_main" style="display: inline-block; margin-top: 5%;margin-bottom: 5%;" href="index.html">TORNAR AL MENÚ PRINCIPAL</a>
 	</div>
+
   </body>
 
   <script>
 
 	// Grab elements, create settings, etc.
 	var video = document.getElementById('video');
-
-	// Get access to the camera!
+  // Get access to the camera!
 	if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 		// Not adding `{ audio: true }` since we only want video now
 		navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
@@ -39,9 +42,9 @@
 
 	// Trigger photo take
 	 document.getElementById("snap").addEventListener("click", function() {
-    canvas.width="640";
-    canvas.height="480";
-		context.drawImage(video, 10, 10);
+    canvas.width="380";
+    canvas.height="240";
+		context.drawImage(video, 1, 1, 380, 240);
     document.getElementById('video').remove();
     document.getElementById('snap').remove();
 	});

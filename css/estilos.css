@@ -18,6 +18,19 @@ h1{
   padding-top: 150px;
 }
 
+.boto_menu_main{
+  text-transform: uppercase;
+  /* margin-left: -25px; */
+  font-weight: bold;
+  background-color: rgb(122, 177, 96)!important;
+  border: 2px solid white!important;
+  border-radius: 0.8rem!important;
+  padding: .75rem .75rem!important;
+  color: white;
+  width: 100%;
+  margin: 0.1em;
+}
+
 button{
   text-transform: uppercase;
   /* margin-left: -25px; */
